@@ -3,8 +3,7 @@ import React from 'react';
 const Banner = ({ title }) => (
   <div
     style={{
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
+      backgroundColor: '#cb4',
       height: '300px',
       display: 'flex',
       alignItems: 'center',
