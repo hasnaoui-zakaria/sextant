@@ -1,29 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class IpFetcher extends React.Component {
-  state = {
-    ipAddress: '',
-  };
+class IpFetcher extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            url: props.url,
+            ipAddress: null
+        };
+    }
 
-  componentDidMount() {
-    const ipType = this.props.ipType === 'ipv4' ? 'IPv4' : 'IPv6';
-    fetch(`https://api.ipify.org?format=json&callback=?`)
-      .then(response => response.json())
-      .then(data => {
-        this.setState({
-          ipAddress: data.ip,
-        });
-      });
-  }
+    componentDidMount() {
+        fetch(this.state.url)
+            .then(response => response.json())
+            .then(data => this.setState({ ipAddress: data.ip }));
+    }
 
-  render() {
-    return (
-      <div>
-        <p>Your public {this.props.ipType} address </p>
-        <p> {this.state.ipAddress} </p>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <p>Your public address </p>
+                <p> {this.state.ipAddress} </p>
+            </div>
+        );
+    }
 }
 
 export default IpFetcher;

@@ -10,10 +10,10 @@ function App() {
         title="Welcome to SexTant"
       />
       <Exhibit heading="My Exhibit" name="IPv4">
-        <IpFetcher ipType="ipv4" />
+        <IpFetcher url='https://api.ipify.org?format=json' />
       </Exhibit>
       <Exhibit heading="My Exhibit" name="IPv6">
-        <IpFetcher ipType="ipv6" />
+        <IpFetcher url='https://api64.ipify.org?format=json' />
       </Exhibit>    
     </div>
   );
