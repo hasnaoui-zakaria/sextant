@@ -1,0 +1,33 @@
+.Exhibit {
+    float: left;
+    margin: 0.5vw;
+    padding: 0vw 2vw 0vw 2vw;
+    text-align: center;
+    color: #ffbb00;
+    background-color: #6f3600;
+    border: 0.25vw solid #7c7c7c;
+    border-radius: 2vw;
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ExhibitHeading {
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.ExhibitContent {
+    margin: 0.5vw;
+    padding: 1vw 1vw 1vw 1vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vw;
+    color: #ff9e03;
+    background-color: #742807;
+    border: 0.25vw solid #b9baa2;
+    border-radius: 2vw;
+}
