@@ -7,7 +7,7 @@
     background-color: #6f3600;
     border: 0.25vw solid #7c7c7c;
     border-radius: 2vw;
-    width: 40vw;
+    width: 30vw;
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
     padding: 1vw 1vw 1vw 1vw;
     text-align: center;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 2vw;
     color: #ff9e03;
     background-color: #742807;
     border: 0.25vw solid #b9baa2;
